@@ -8,9 +8,22 @@ async def start_message(client: Client, message: Message):
     await message.reply_photo(
         photo="https://envs.sh/Ylh.jpg",  # Replace with the actual photo URL or local file path
         caption=(
-            f"""**Hello {message.from_user.first_name}! 👋\n\n
-            I'm your Reaction Bot! I'll react to every message in groups, channels, and private chats with a 👍 emoji.\n\n
-            Add me to your group or channel and watch me in action! 🚀\n\n
+            f"""**❖ нᴇʏ  {message.from_user.first_name} !, ɴɪᴄᴇ ᴛᴏ ᴍᴇᴇᴛ ʏᴏᴜ !
+━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+● ɪ ᴀᴍ  {(await client.get_me()).mention} !
+
+
+⦿━━━━━━━━━━━━━━━━━━━━━⦿
+❍ •  ɪ'ʟʟ ʀᴇᴀᴄᴛ ᴛᴏ ᴇᴠᴇʀʏ ᴍᴇssᴀɢᴇ  •
+│❍ • ʙᴇsᴛ ǫᴜɪʟɪᴛʏ ᴍᴜsɪᴄ sᴏᴜɴᴅ •
+│❍ • ɴᴏ ʟᴀɢs + ɴᴏ ᴀᴅs •
+│❍ • 24x7 ᴏɴʟɪɴᴇ sᴜᴘᴘᴏʀᴛ •
+│❍ • ᴀ ᴘᴏᴡᴇʀғᴜʟ ᴛᴇʟᴇɢʀᴀᴍ ʙᴏᴛ •
+❍ • ɪ ʜᴀᴠᴇ sᴘᴇᴄɪᴀʟ ғᴇᴀᴛᴜʀᴇs •
+⦿━━━━━━━━━━━━━━━━━━━━━⦿
+
+❖ ᴛʜɪs ɪs ᴘᴏᴡᴇʀғᴜʟ ʙᴏᴛ, ғᴏʀ ʏᴏᴜʀ ɢʀᴏᴜᴘ/ᴄʜᴀɴɴᴇʟ  •\n\n
             You can make your bot by /clone😁**"""
         ),
         reply_markup=InlineKeyboardMarkup(
