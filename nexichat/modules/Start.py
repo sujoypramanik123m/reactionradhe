@@ -8,14 +8,14 @@ async def start_message(client: Client, message: Message):
     await message.reply_photo(
         photo="https://envs.sh/Ylh.jpg",  # Replace with the actual photo URL or local file path
         caption=(
-            f"Hello {message.from_user.first_name}! 👋\n\n"
+            f"""**Hello {message.from_user.first_name}! 👋\n\n"
             "I'm your Reaction Bot! I'll react to every message in groups, channels, and private chats with a 👍 emoji.\n\n"
             "Add me to your group or channel and watch me in action! 🚀\n\n"
-            "**You can make your bot by /clone😁**"
+            "You can make your bot by /clone😁**"""
         ),
         reply_markup=InlineKeyboardMarkup(
             [
-                [InlineKeyboardButton("Clone Bot 🤖", callback_data="clone_bot")],
+                [InlineKeyboardButton("Add me on channel", callback_data="clone_bot")],
                 [InlineKeyboardButton("Add to Group ➕", url="https://t.me/ReactionByBot?startgroup=true")]
             ]
         )
