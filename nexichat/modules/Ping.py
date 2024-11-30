@@ -28,7 +28,7 @@ from nexichat import OWNER, nexichat
 
 PNG_BTN = [
     [
-        InlineKeyboardButton(text="🛠️ σρεи ¢σммαиdꜱ ⚙️", callback_data="HELP"),
+        InlineKeyboardButton(text="• sᴜᴘᴘᴏꝛᴛ •", url="t.me/ur_rishu_143"),
     ],
     [
         InlineKeyboardButton(
