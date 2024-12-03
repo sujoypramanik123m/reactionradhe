@@ -43,7 +43,7 @@ async def anony_boot():
                 BotCommand("id", "Get users user_id"),
                 BotCommand("stats", "Check bot stats"),
                 BotCommand("gcast", "Broadcast any message to groups/users"),
-                BotCommand("repo", "Get chatbot source code"),
+                
             ]
         )
         LOGGER.info("Bot commands set successfully.")
