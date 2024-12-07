@@ -4,9 +4,9 @@ from nexichat import nexichat
 
 @nexichat.on_message(filters.command("start"))
 async def start_message(client: Client, message: Message):
-    # Sending a photo along with the reply text
-    await message.reply_photo(
-        photo="https://envs.sh/Ylh.jpg",  # Replace with the actual photo URL or local file path
+    # Sending a video along with the reply text
+    await message.reply_video(
+        video="https://envs.sh/RCD.mp4",  # Replace with the actual video URL or local file path
         caption=(
             f"""**❖ нᴇʏ  {message.from_user.first_name} !, ɴɪᴄᴇ ᴛᴏ ᴍᴇᴇᴛ ʏᴏᴜ !
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━
