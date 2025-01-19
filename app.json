@@ -11,7 +11,7 @@
     "buildpacks": [{
     "url": "heroku/python"
   }],
-  "repository": "https://github.com/TheRishuCoder/Activetoreaction",
+  "repository": "https://github.com/live9807/reactionradhe",
   "env": {
     "BOT_TOKEN": {
       "description": "A Bot token from @BotFather",
