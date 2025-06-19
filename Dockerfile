@@ -1,4 +1,4 @@
-FROM python:latest
+FROM python3.12
 
 RUN apt-get update -y && apt-get upgrade -y
 
