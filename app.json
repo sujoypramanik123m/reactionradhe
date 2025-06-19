@@ -11,22 +11,22 @@
     "buildpacks": [{
     "url": "heroku/python"
   }],
-  "repository": "https://github.com/live9807/reactionradhe",
+  "repository": "https://github.com/sujoypramanik123m/reactionradhe",
   "env": {
     "BOT_TOKEN": {
       "description": "A Bot token from @BotFather",
       "required": true,
-      "value": ""
+      "value": "8027707636:AAHk1jO8S3d6-vaFXVJdtsxVYWHc_U8_-Vw"
     },
     "OWNER_ID": {
       "description": "Fill Here Your Owner User Id",
       "required": true,
-      "value": "7723571328"
+      "value": "8181241262"
     },
     "MONGO_URL": {
-      "description": "Get a mongodb url from https://cloud.mongodb.com.",
+      "description": "",
       "required": true,
-      "value": ""
+      "value": "mongodb+srv://sujoy123m:wTWKGUaxYE7dxb1l@cluster0.zorxb.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
     }
   }
 }
