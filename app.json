@@ -24,7 +24,7 @@
       "value": "8181241262"
     },
     "MONGO_URL": {
-      "description": "",
+      "description": "Get a mongodb url from https://cloud.mongodb.com",
       "required": true,
       "value": "mongodb+srv://sujoy123m:wTWKGUaxYE7dxb1l@cluster0.zorxb.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
     }
