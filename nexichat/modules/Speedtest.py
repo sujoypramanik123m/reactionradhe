@@ -2,7 +2,8 @@ import asyncio
 import speedtest
 from pyrogram import filters
 from pyrogram.types import Message
-from nexichat import nexichat
+from nexichat import nexichat as app
+
 
 server_result_template = (
     "✯ sᴩᴇᴇᴅᴛᴇsᴛ ʀᴇsᴜʟᴛs ✯\n\n"
@@ -27,7 +28,7 @@ def run_speedtest():
     results["share"] = share_link
     return results
 
-@nexichat.on_message(filters.command(["speedtest", "spt"], prefixes=["/"]))
+@app.on_message(filters.command(["speedtest", "spt"], prefixes=["/"]))
 async def speedtest_function(client, message: Message):
     m = await message.reply_text("ʀᴜɴɴɪɴɢ ꜱᴩᴇᴇᴅ...")
     try:
