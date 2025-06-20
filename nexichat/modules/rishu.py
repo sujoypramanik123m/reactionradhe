@@ -1,10 +1,11 @@
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, Message
+from nexichat import nexichat as app
 
 def filter(cmd: str):
     return filters.private & filters.incoming & filters.command(cmd)
 
-@Client.on_message(filter("repo"))
+@app.on_message(filter("repo"))
 async def start(bot: Client, msg: Message):
     me2 = (await bot.get_me()).mention
     await bot.send_photo(
