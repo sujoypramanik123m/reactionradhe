@@ -40,7 +40,7 @@ async def must_join_channels(app: Client, msg: Message):
 
             try:
                 await msg.reply_photo(
-                    photo="https://envs.sh/Tn_.jpg",
+                    photo="https://i.ibb.co/v67qR7Gz/x.jpg",
                     caption=(f"**ʜᴇʟʟᴏ {msg.from_user.mention}✨,**\n\n"
                              "**ʏᴏᴜ ᴍᴜsᴛ ᴊᴏɪɴ ᴛʜᴇ ғᴏʟʟᴏᴡɪɴɢ ᴄʜᴀɴɴᴇʟs ᴛᴏ ᴜsᴇ ᴛʜɪs ʙᴏᴛ:**"),
                     reply_markup=InlineKeyboardMarkup(buttons))
