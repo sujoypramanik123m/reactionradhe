@@ -12,6 +12,7 @@ from datetime import datetime
 from pymongo import MongoClient
 from pyrogram.enums import ChatType
 from pyrogram import Client, filters
+from pyrogram.enums import ParseMode
 from nexichat import db
 from config import OWNER_ID, MONGO_URL, OWNER_USERNAME
 from pyrogram.errors import FloodWait, ChatAdminRequired
@@ -22,15 +23,16 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message, 
 from pyrogram.types import InlineKeyboardButton
 
 from config import SUPPORT_GRP, UPDATE_CHNL
-from nexichat import OWNER, nexichat
+from nexichat import OWNER
+
+from nexichat import nexichat as app
 
 
 
 
 
 
-
-@nexichat.on_message(filters.command("stats"))
+@app.on_message(filters.command("stats"))
 async def stats(cli: Client, message: Message):
     bot_id = (await cli.get_me()).id
     users = len(await get_served_users())
@@ -44,12 +46,8 @@ async def stats(cli: Client, message: Message):
     )
 
 
-from pyrogram.enums import ParseMode
 
-from nexichat import nexichat
-
-
-@nexichat.on_message(filters.command("id"))
+@app.on_message(filters.command("id"))
 async def getid(client, message):
     chat = message.chat
     your_id = message.from_user.id
@@ -95,7 +93,7 @@ async def getid(client, message):
     await message.reply_text(
         text,
         disable_web_page_preview=True,
-        parse_mode=ParseMode.DEFAULT,
+        parse_mode=ParseMode.MARKDOWN,
     )
 
 
