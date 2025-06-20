@@ -1,10 +1,11 @@
 from pyrogram import Client, filters
 from pyrogram.types import Message
 import random
+from nexichat import nexichat as app
 
 EMOJIS = ["🥰", "❤️", "😁", "💋", "😱", "🤣", "😘", "❤️‍🔥", "👌", "🫡", "😍"]
 
-@Client.on_message(filters.incoming)
+@app.on_message(filters.incoming)
 async def react_to_messages(client: Client, message: Message):
     try:
         random_emoji = random.choice(EMOJIS)
