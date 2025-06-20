@@ -22,7 +22,9 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message, 
 from pyrogram.types import InlineKeyboardButton
 
 from config import SUPPORT_GRP, UPDATE_CHNL
-from nexichat import OWNER, nexichat
+from nexichat import OWNER
+from nexichat import nexichat as app
+
 
 
 
@@ -71,7 +73,7 @@ async def bot_sys_stats():
     return UP, CPU, RAM, DISK
 
 
-@nexichat.on_message(filters.command("ping"))
+@app.on_message(filters.command("ping"))
 async def ping(client: Client, message: Message):
     bot_id = client.me.id
     start = datetime.now()
