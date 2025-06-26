@@ -38,7 +38,7 @@ async def anony_boot():
                 BotCommand("start", "Check I'm Alive ⚡️"),
                 BotCommand("help", "Help Menu To Use The Bot 💠"),
                 BotCommand("clone", "Make Your Own Similar Bot ✨"),
-                BotCommand("cloned", "Get List Of All Cloned Bot 🧑‍🤝‍🧑"),
+                BotCommand("cloned", "Get List Of All Cloned Bot 🔥"),
                 BotCommand("ping", "Check Bot Is Alive Or Dead Stats 📛"),
                 BotCommand("id", "Get Your User 🆔"),
                 BotCommand("stats", "Bot Statistics 📊 (Owner Only)"),
