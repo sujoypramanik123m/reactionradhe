@@ -61,7 +61,7 @@ def home():
     return "Bot is running"
 
 def run_flask():
-    app.run(host="0.0.0.0", port=8000)
+    app.run(host="0.0.0.0", port=8687)
 
 if __name__ == "__main__":
     flask_thread = threading.Thread(target=run_flask)
