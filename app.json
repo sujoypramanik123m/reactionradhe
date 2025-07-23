@@ -16,7 +16,7 @@
     "BOT_TOKEN": {
       "description": "A Bot token from @BotFather",
       "required": true,
-      "value": "8027707636:AAHk1jO8S3d6-vaFXVJdtsxVYWHc_U8_-Vw"
+      "value": ""
     },
     "OWNER_ID": {
       "description": "Fill Here Your Owner User Id",
